@@ -536,6 +536,16 @@ footer a {
 }
 
 @media screen and (max-width: 992px) {
+  .header__main-hero--boldText {
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    font-weight: bolder;
+    margin-bottom: 20px;
+  }
+  .header__main-hero--text {
+    font-size: 1rem;
+    padding-bottom: 20px;
+  }
   #hamburger {
     self-align: center;
     display: block !important;
@@ -554,7 +564,6 @@ footer a {
 
 @media screen and (max-width: 768px) {
   .container {
-    max-width: 100%;
     margin: 0 auto;
   }
   .header__main-hero {
