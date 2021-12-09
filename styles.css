@@ -26,6 +26,10 @@ body {
   color: #ffff;
 }
 
+.header__nav {
+  margin: 0 auto;
+}
+
 .header .custom-shape-divider-top-1638960519 {
   position: absolute;
   top: 0;
@@ -58,13 +62,15 @@ body {
 }
 
 .header__nav {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 20px;
 }
 
@@ -133,15 +139,19 @@ body {
 }
 
 .header #hamburger {
+  display: none;
   cursor: pointer;
 }
 
 .header #hamburger span {
-  display: none;
-  margin-bottom: 7px;
+  display: block;
   height: 2px;
   background: #ffffff;
-  width: 40px;
+  width: 30px;
+}
+
+.header #hamburger span:not(:last-child) {
+  margin-bottom: 7px;
 }
 
 .service {
@@ -526,8 +536,12 @@ footer a {
 }
 
 @media screen and (max-width: 992px) {
-  #hamburger span {
+  #hamburger {
+    self-align: center;
     display: block !important;
+  }
+  #hamburger span {
+    display: block;
     height: 2px;
     width: 40px;
     background: #ffffff;
